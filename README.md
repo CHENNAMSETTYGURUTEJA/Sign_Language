@@ -1,5 +1,6 @@
 # 🖐️ Sign_Language_Detection
 This project detects and recognizes sign language gestures in real-time using Computer Vision and a pre-trained Machine Learning model. The goal is to help bridge communication between sign language users and non-users.
+
 📌 Features
 
 🎥 Live webcam streaming for gesture detection
