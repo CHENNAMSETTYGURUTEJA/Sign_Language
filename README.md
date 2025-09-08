@@ -28,35 +28,50 @@ This project detects and recognizes sign language gestures in real-time using Co
 >NumPy – for array operations
 
 ## 📂Project Structure
-Sign-Language-Detection/
-│── Model/
-│   ├── keras_model.h5        # Pre-trained model
-│   ├── labels.txt            # Gesture labels
-│
-│── images/                   # Gesture reference images
-│   ├── hello.jpg
-│   ├── yes.jpg
-│   ├── no.jpg
-│   └── ...
-│
-│── app.py                    # Main Streamlit app
-│── requirements.txt          # Dependencies
-│── README.md                 # Project documentation
+The project is organized as follows:
+
+>Model/ → Contains the pre-trained model and gesture labels
+
+>>keras_model.h5 → Trained deep learning model for gesture recognition
+
+>>labels.txt → List of gesture names used for classification
+
+>images/ → Reference images of gestures for the left-side panel in the UI
+
+>>Example: hello.jpg, yes.jpg, no.jpg, etc.
+
+>app.py → Main Streamlit application file (runs the real-time detection app)
+
+>requirements.txt → List of dependencies needed to run the project
+
+>README.md → Project documentation (this file)
 
 ## ⚙️ Installation
 
-### Clone this repository:
+### 1)Clone this repository:
 
-git clone https://github.com/your-username/sign-language-detection.git
-cd sign-language-detection
+git clone https://github.com/CHENNAMSETTYGURUTEJA/Sign_Language.git
 
+cd Sign_Language
 
-### Install dependencies:
+### 2)Create and activate a virtual environment:
+
+python -m venv env
+
+####  Activate it on Windows
+
+env\Scripts\activate
+
+#### Activate it on Mac/Linux
+
+source env/bin/activate
+
+### 3)Install dependencies:
 
 pip install -r requirements.txt
 
 
-### Run the Streamlit app:
+### 4)Run the Streamlit app:
 
 streamlit run app.py
 
@@ -74,6 +89,5 @@ streamlit run app.py
 
 ## 🖼️ Example Output
 
-Gesture: "Yes" → Prediction displayed on screen.
+![IMG_20250908_205009 1](https://github.com/user-attachments/assets/98c00cb2-3a71-44c6-94cc-87489259c0cd)
 
-Gesture: "Help" → Model recognizes and highlights it.
