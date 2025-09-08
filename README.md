@@ -1,7 +1,7 @@
 # 🖐️ Sign_Language_Detection
 This project detects and recognizes sign language gestures in real-time using Computer Vision and a pre-trained Machine Learning model. The goal is to help bridge communication between sign language users and non-users.
 
-# 📌 Features
+## 📌 Features
 
 > Live webcam streaming for gesture detection
 
@@ -13,7 +13,7 @@ This project detects and recognizes sign language gestures in real-time using Co
 
 > Interactive Streamlit web app with user-friendly UI
 
-# 🚀 Tech Stack
+## 🚀 Tech Stack
 
 >Python
 
@@ -27,7 +27,7 @@ This project detects and recognizes sign language gestures in real-time using Co
 
 >NumPy – for array operations
 
-# 📂Project Structure
+## 📂Project Structure
 Sign-Language-Detection/
 │── Model/
 │   ├── keras_model.h5        # Pre-trained model
@@ -43,24 +43,24 @@ Sign-Language-Detection/
 │── requirements.txt          # Dependencies
 │── README.md                 # Project documentation
 
-# ⚙️ Installation
+## ⚙️ Installation
 
-## Clone this repository:
+### Clone this repository:
 
 git clone https://github.com/your-username/sign-language-detection.git
 cd sign-language-detection
 
 
-## Install dependencies:
+### Install dependencies:
 
 pip install -r requirements.txt
 
 
-## Run the Streamlit app:
+### Run the Streamlit app:
 
 streamlit run app.py
 
-# 🎯 Usage
+## 🎯 Usage
 
 >Launch the app.
 
@@ -72,7 +72,7 @@ streamlit run app.py
 
 >The app will display the prediction in real-time.
 
-# 🖼️ Example Output
+## 🖼️ Example Output
 
 Gesture: "Yes" → Prediction displayed on screen.
 
