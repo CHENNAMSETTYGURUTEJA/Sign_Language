@@ -3,91 +3,119 @@ This project detects and recognizes sign language gestures in real-time using Co
 
 ## 📌 Features
 
-> Live webcam streaming for gesture detection
+✅ Live webcam streaming for gesture detection
 
-> Hand detection using cvzone.HandTrackingModule
+✅ Hand detection using cvzone.HandTrackingModule
 
-> Gesture classification with a custom-trained Keras model (keras_model.h5)
+✅ Gesture classification with a custom-trained Keras model (keras_model.h5)
 
-> Gesture list panel with images for reference
+✅ Gesture list panel with images for reference
 
-> Interactive Streamlit web app with user-friendly UI
+✅ Interactive Streamlit web app with user-friendly UI
 
 ## 🚀 Tech Stack
 
->Python
+*️⃣ Python
 
->Streamlit – for web interface
+*️⃣ Streamlit – for web interface
 
->OpenCV (cv2) – for video processing
+*️⃣ OpenCV (cv2) – for video processing
 
->cvzone – for hand tracking
+*️⃣ cvzone – for hand tracking
 
->TensorFlow/Keras – for model training and inference
+*️⃣ TensorFlow/Keras – for model training and inference
 
->NumPy – for array operations
+*️⃣ NumPy – for array operations
 
 ## 📂Project Structure
-The project is organized as follows:
 
->Model/ → Contains the pre-trained model and gesture labels
+Sign-Language-Detection/
 
->>keras_model.h5 → Trained deep learning model for gesture recognition
+│
 
->>labels.txt → List of gesture names used for classification
+├── app.py                  # Main Streamlit application
 
->images/ → Reference images of gestures for the left-side panel in the UI
+├── requirements.txt        # Dependencies
 
->>Example: hello.jpg, yes.jpg, no.jpg, etc.
+├── README.md               # Project documentation
 
->app.py → Main Streamlit application file (runs the real-time detection app)
+│
 
->requirements.txt → List of dependencies needed to run the project
+├── Model/                  # Pre-trained model and labels
 
->README.md → Project documentation (this file)
+│   ├── keras_model.h5
+
+│   └── labels.txt
+
+│
+
+├── images/                 # Gesture reference images
+
+│   ├── hello.jpg
+
+│   ├── yes.jpg
+
+│   ├── no.jpg
+
+│   ├── help.jpg
+
+│   └── ...
+
+└── 
 
 ## ⚙️ Installation
 
-### 1)Clone this repository:
+#### 1)Clone this repository:
 
+```bash
 git clone https://github.com/CHENNAMSETTYGURUTEJA/Sign_Language.git
-
 cd Sign_Language
+```
 
-### 2)Create and activate a virtual environment:
+#### 2)Create and activate a virtual environment:
 
+```bash
 python -m venv env
+```
 
 ####  Activate it on Windows
 
+```bash
 env\Scripts\activate
+```
 
 #### Activate it on Mac/Linux
-
+```bash
 source env/bin/activate
+```
 
-### 3)Install dependencies:
+#### 3)Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
+#### 4)Run the Streamlit app:
 
-### 4)Run the Streamlit app:
-
+```bash
 streamlit run app.py
+```
 
 ## 🎯 Usage
 
->Launch the app.
+1️⃣ Launch the app.
 
->The gesture list panel on the left shows available gestures with sample images.
+2️⃣ The gesture list panel on the left shows available gestures with sample images.
 
->Allow webcam access.
+3️⃣ Allow webcam access.
 
->Perform any gesture in front of the camera.
+4️⃣ Perform any gesture in front of the camera.
 
->The app will display the prediction in real-time.
+5️⃣ The app will display the prediction in real-time.
 
 ## 🖼️ Example Output
 
-![IMG_20250908_205009 1](https://github.com/user-attachments/assets/98c00cb2-3a71-44c6-94cc-87489259c0cd)
+![IMG_20250908_204944](https://github.com/user-attachments/assets/6217c65f-8509-4a4b-9881-085496a1edef)
+![IMG_20250908_204923](https://github.com/user-attachments/assets/3fd9d04d-e9fa-448c-b74f-a0275c5fe795)
+
 
